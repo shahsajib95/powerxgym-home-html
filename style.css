@@ -5,6 +5,9 @@ a{
     color: white!important;
     text-decoration: none!important;
 }
+a:hover{
+    color: yellow;
+}
 p{
     font-size: 15px;
 }
@@ -22,7 +25,7 @@ p{
     color: yellow!important;
 }
 .header{
-    background-image: url("/pic/banner.jpg");
+    background-image: url("pic/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg");
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -44,14 +47,14 @@ p{
     
 }
 .about-box1{
-    background-image: url('/pic/hipcravo-5UbIqV58CW8-unsplash.jpg');
+    background-image: url('pic/hipcravo-5UbIqV58CW8-unsplash.jpg');
 }
 .about-box2{
-    background-image: url('/pic/daniel-apodaca-WdoQio6HPVA-unsplash.jpg'); 
+    background-image: url('pic/daniel-apodaca-WdoQio6HPVA-unsplash.jpg'); 
     background-size: 200%!important;
 }
 .about-box3{
-    background-image: url('/pic/penguinuhh-8VI6WwEEEHw-unsplash.jpg');
+    background-image: url('pic/penguinuhh-8VI6WwEEEHw-unsplash.jpg');
 }
 .about-box1, .about-box2, .about-box3{
     height: 400px;
