@@ -1,0 +1,104 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+a{
+    color: white!important;
+    text-decoration: none!important;
+}
+p{
+    font-size: 15px;
+}
+.active, .nav-link:hover{
+    color: yellow!important;
+}
+.container{
+    margin-bottom: 150px;
+}
+#navbarNav{
+    margin-left: 39%;
+    font-size: 15px;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: yellow!important;
+}
+.header{
+    background-image: url("/pic/banner.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 750px;
+    background-size: 100%;
+    color: white;
+    text-align: justify;
+}
+.main-button{
+    background-color: #FCD842;
+    padding: 15px 50px;
+    border: none;
+}
+.main-button h2{
+    margin-bottom: 0 !important;
+}
+.main-button:hover{
+    background-color: white;
+    
+}
+.about-box1{
+    background-image: url('/pic/hipcravo-5UbIqV58CW8-unsplash.jpg');
+}
+.about-box2{
+    background-image: url('/pic/daniel-apodaca-WdoQio6HPVA-unsplash.jpg'); 
+    background-size: 200%!important;
+}
+.about-box3{
+    background-image: url('/pic/penguinuhh-8VI6WwEEEHw-unsplash.jpg');
+}
+.about-box1, .about-box2, .about-box3{
+    height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 15%!important;
+}
+#about-border{
+    display: flex;
+}
+.about-border {
+    height: 150px;
+    width: 1px;
+    background-color: rgba(117, 117, 117, 0.192);
+    margin-left: 32%;
+    position: absolute;
+    top: -113px;
+}
+.about-border2 {
+    height: 150px;
+    width: 1px;
+    background-color: rgba(117, 117, 117, 0.192);
+    margin-left: 32%;
+    position: absolute;
+    bottom: -65px;
+}
+.training h3{
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+}
+.choose-box{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+.choose-box:hover{
+    border: 1px solid yellow;
+}
+.footer{
+    background-color: #171426;
+}
+.footer a{
+    color: white;
+    display: block;
+}
+.footer img{
+    margin-left: 10px;
+}
