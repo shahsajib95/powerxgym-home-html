@@ -125,3 +125,30 @@ p{
     bottom: -30px;
     left: 30px;
 }
+.big-price{
+    font-size: 50px;
+}
+.price-box1 p, .price-box2 p, .price-box3 p{
+    margin-left: 10px;
+}
+.price-box1{
+    background-image: url('pic/hipcravo-5UbIqV58CW8-unsplash.jpg');
+    background-size: 100%;
+}
+.price-box2{
+    background-image: url('pic/daniel-apodaca-WdoQio6HPVA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 240%;
+}
+.price-box3{
+    background-image: url('pic/penguinuhh-8VI6WwEEEHw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+}
+.price-content{
+    z-index: 1;
+    color: white;
+  }
+.fas{
+    font-size: 20px;
+}
