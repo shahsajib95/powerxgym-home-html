@@ -1,30 +1,38 @@
-*{
+* {
     font-family: 'Bebas Neue', cursive;
 }
-a{
+
+a {
     color: white!important;
     text-decoration: none!important;
 }
-a:hover{
+
+a:hover {
     color: yellow;
 }
-p{
+
+p {
     font-size: 15px;
 }
-.active, .nav-link:hover{
+
+.active, .nav-link:hover {
     color: yellow!important;
 }
-.container{
+
+.container {
     margin-bottom: 150px;
 }
-#navbarNav{
+
+#navbarNav {
     margin-left: 39%;
     font-size: 15px;
 }
-.navbar-light .navbar-nav .active>.nav-link{
+
+.navbar-light .navbar-nav .active>.nav-link {
     color: yellow!important;
 }
-.header{
+
+.header {
     background-image: url("pic/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg");
     width: 100%;
     background-repeat: no-repeat;
@@ -34,38 +42,46 @@ p{
     color: white;
     text-align: justify;
 }
-.main-button{
+
+.main-button {
     background-color: #FCD842;
     padding: 15px 50px;
     border: none;
 }
-.main-button h2{
+
+.main-button h2 {
     margin-bottom: 0 !important;
 }
-.main-button:hover{
+
+.main-button:hover {
     background-color: white;
-    
 }
-.about-box1{
+
+.about-box1 {
     background-image: url('pic/hipcravo-5UbIqV58CW8-unsplash.jpg');
 }
-.about-box2{
-    background-image: url('pic/daniel-apodaca-WdoQio6HPVA-unsplash.jpg'); 
+
+.about-box2 {
+    background-image: url('pic/daniel-apodaca-WdoQio6HPVA-unsplash.jpg');
     background-size: 200%!important;
 }
-.about-box3{
+
+.about-box3 {
     background-image: url('pic/penguinuhh-8VI6WwEEEHw-unsplash.jpg');
 }
-.about-box1, .about-box2, .about-box3{
+
+.about-box1, .about-box2, .about-box3 {
     height: 400px;
     background-size: 100%;
     background-repeat: no-repeat;
     color: white;
     padding: 15%!important;
 }
-#about-border{
+
+#about-border {
     display: flex;
 }
+
 .about-border {
     height: 150px;
     width: 1px;
@@ -74,6 +90,7 @@ p{
     position: absolute;
     top: -113px;
 }
+
 .about-border2 {
     height: 150px;
     width: 1px;
@@ -82,30 +99,37 @@ p{
     position: absolute;
     bottom: -65px;
 }
-.training h3{
+
+.training h3 {
     position: absolute;
     bottom: 50px;
     left: 15px;
 }
-.choose-box{
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+
+.choose-box {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
-.choose-box:hover{
+
+.choose-box:hover {
     border: 1px solid yellow;
 }
-.footer{
+
+.footer {
     background-color: #171426;
 }
-.footer a{
+
+.footer a {
     color: white;
     display: block;
 }
-.footer img{
+
+.footer img {
     margin-left: 10px;
 }
-.class-header{
+
+.class-header {
     background-image: url("pic/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg");
     width: 100%;
     background-repeat: no-repeat;
@@ -115,40 +139,86 @@ p{
     color: white;
     text-align: justify;
 }
-.class-banner h1{
+
+.all-banner h1 {
     margin-top: 200px;
 }
-.class h3{
+
+.class h3 {
     padding: 10px;
     width: 61%;
     position: absolute;
     bottom: -30px;
     left: 30px;
 }
-.big-price{
+
+.big-price {
     font-size: 50px;
 }
-.price-box1 p, .price-box2 p, .price-box3 p{
+
+.price-box1 p, .price-box2 p, .price-box3 p {
     margin-left: 10px;
 }
-.price-box1{
+
+.price-box1 {
     background-image: url('pic/hipcravo-5UbIqV58CW8-unsplash.jpg');
     background-size: 100%;
 }
-.price-box2{
+
+.price-box2 {
     background-image: url('pic/daniel-apodaca-WdoQio6HPVA-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: 240%;
 }
-.price-box3{
+
+.price-box3 {
     background-image: url('pic/penguinuhh-8VI6WwEEEHw-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: 120%;
 }
-.price-content{
+
+.price-content {
     z-index: 1;
     color: white;
-  }
-.fas{
+}
+
+.fas {
     font-size: 20px;
+}
+
+#progressbar {}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 25px;
+    background-color: #AFAFAF;
+    padding: 10px 23px;
+    border-radius: 50px;
+    color: white;
+}
+
+#progressbar .actives {
+    background-color: #FCD842;
+}
+
+.dot {
+    background-color: none;
+    width: 100%;
+    border-top: 2px dotted;
+    top: 25px;
+    position: relative;
+}
+
+.form-control {
+    height: calc(2.0em + .75rem + 2px)!important;
+    border-radius: 0!important;
+}
+
+.custom-select {
+    height: calc(2.0em + .75rem + 2px)!important;
+    border-radius: 0!important;
+}
+
+.payment-box {
+    border: 1px solid;
 }

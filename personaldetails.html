@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 
@@ -37,7 +38,7 @@
               <a class="nav-link ml-3" href="#">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-3 active" href="#">Our Classes</a>
+              <a class="nav-link ml-3 " href="/class.html">Our Classes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link ml-3" href="#">About us</a>
@@ -46,7 +47,7 @@
               <a class="nav-link ml-3" href="#">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link ml-3" href="pricing.html">Pricing</a>
+              <a class="nav-link ml-3 active" href="pricing.html">Pricing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link ml-3" href="#">Contact Us</a>
@@ -55,57 +56,104 @@
         </div>
       </nav>
       <!-- NavBar finish here -->
-      <section class="class-banner">
-        <h1 class="text-center">Our Classes</h1>
+      <section class="all-banner">
+        <h1 class="text-center">Your GYM Membership</h1>
       </section>
     </div>
   </section>
 
-  <section class="class mt-5">
+  <section class="persondetails-form mt-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="class-box">
-            <img class="w-75" src="pic/damir-spanic-hp3y7G7TALI-unsplash.jpg">
-            <h3 class="bg-warning"><a href="#">Phycho Training -></a></h3>
+      <!-- progressbar -->
+      <ul id="progressbar" class="d-flex justify-content-around">
+        <li class="actives" id="details">1</li>
+        <div class="dot"></div>
+        <li id="payment">2</li>
+        <div class="dot"></div>
+        <li id="membership">3</li>
+      </ul>
+      <!-- progressbar finish -->
+      <form>
+        <div class="row mt-5">
+          <div class="col">
+            <h6>First Name</h6>
+            <input type="text" class="form-control" id="firstname">
+          </div>
+          <div class="col">
+            <h6>Last Name</h6>
+            <input type="text" class="form-control" id="lastname">
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="class-box">
-            <img class="w-75" src="pic/baylee-gramling-5m4Z14SDL80-unsplash.jpg">
-            <h3 class="bg-warning text-body"><a href="#">Self Defense -></a></h3>
+        <div class="row mt-5">
+          <div class="col">
+            <h6>Email</h6>
+            <input type="text" class="form-control" id="email">
+          </div>
+          <div class="col">
+            <h6>Mobile Number</h6>
+            <input type="text" class="form-control" id="phone">
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="class-box">
-            <img class="w-75" src="pic/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg">
-            <h3 class="bg-warning text-body"><a href="#">Advance GYM -></a></h3>
-          </div>
-        </div>
-      </div>
 
-      <div class="row mt-5">
-        <div class="col-md-4">
-          <div class="class-box">
-            <img class="w-75" src="pic/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg">
-            <h3 class="bg-warning text-body"><a href="#">Cardio Training -></a></h3>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <h6>Date of Birth</h6>
+            <div class="row">
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="date" id="date">
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="month" id="month">
+              </div>
+              <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="year" id="year">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h6>Gender</h6>
+            <select class="custom-select">
+              <option selected disabled value="" id="gender">Choose...</option>
+              <option>Male</option>
+              <option>FeMale</option>
+              <option>Other</option>
+            </select>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="class-box">
-            <img class="w-75" src="pic/john-fornander-FIu48iuo_4g-unsplash.jpg">
-            <h3 class="bg-warning text-body"><a href="#">Strength Training -></a></h3>
+
+        <div class="row mt-5">
+          <div class="col">
+            <h6>Adress line 1</h6>
+            <input type="text" class="form-control" id=address>
+          </div>
+          <div class="col">
+            <h6>Country/Region</h6>
+            <input type="text" class="form-control" id="country">
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="class-box">
-            <img class="w-75" src="pic/hipcravo-5UbIqV58CW8-unsplash.jpg">
-            <h3 class="bg-warning text-body"><a href="#">Phycho Training -></a></h3>
+        <div class="row mt-5">
+          <div class="col">
+            <h6>City</h6>
+            <input type="text" class="form-control" id="city">
+          </div>
+          <div class="col">
+            <h6>Post Code</h6>
+            <input type="text" class="form-control" id="postcode">
           </div>
         </div>
-      </div>
+        <button class="main-button mt-5" type="submit">
+          <h2>NEXT</h2>
+        </button>
+      </form>
     </div>
   </section>
+
+
+
+
+
+
 
   <section class="footer pl-5 pr-5">
     <div class="row p-5 text-white">
@@ -141,8 +189,9 @@
         Get exclusive news, features and updates from the Shredder Wiight Loss Academy.
       </div>
     </div>
-
   </section>
+
+
   <script>
     // Get the container element
     var btnContainer = document.getElementById("select");
@@ -171,6 +220,10 @@
 </body>
 
 </html>
+</body>
+
+</html>
+
 </body>
 
 </html>
