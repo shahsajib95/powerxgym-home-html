@@ -97,7 +97,7 @@
                     </div>
                 </div>
 
-                <form>
+                <form id="card-body">
                     <div class="row mt-5">
                         <div class="col">
                             <h6>CARD NUMBER</h6>
@@ -118,10 +118,10 @@
                             <input type="text" class="form-control" id="code">
                         </div>
                     </div>
+                    <button class="main-button mt-5" type="submit">
+                        <h2>NEXT</h2>
+                      </button>
                 </form>
-                <button class="main-button mt-5" type="submit">
-                    <h2>NEXT</h2>
-                  </button>
             </div>
 
             <!-- stripe payment finish -->
@@ -181,6 +181,14 @@
                 this.className += " active";
             });
         }
+
+        // card-body 
+        const cardRadio = document.getElementById("stripeRadio")
+         cardRadio.addEventListener("click", function(){
+             const cardBody = document.getElementById("card-body");
+             cardBody.style.display="block"
+         })
+
     </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

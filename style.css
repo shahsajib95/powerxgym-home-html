@@ -222,3 +222,6 @@ p {
 .payment-box {
     border: 1px solid;
 }
+#card-body{
+    display: none;
+}
