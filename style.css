@@ -9,6 +9,7 @@ a {
 
 a:hover {
     color: yellow;
+    color: black;
 }
 
 p {
@@ -54,7 +55,7 @@ p {
 }
 
 .main-button:hover {
-    background-color: white;
+    color: black;
 }
 
 .about-box1 {
