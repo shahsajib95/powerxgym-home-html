@@ -187,8 +187,6 @@ p {
     font-size: 20px;
 }
 
-#progressbar {}
-
 #progressbar li {
     list-style-type: none;
     font-size: 25px;
@@ -226,3 +224,16 @@ p {
 #card-body{
     display: none;
 }
+@import "font/fontawesome-webfont.ttf";
+@import "css/font-awesome.min.css";
+
+#cardnumber:-webkit-input-placeholder{ 
+    content: "\f09d";
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    }

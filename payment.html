@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 
@@ -57,7 +57,7 @@
             </nav>
             <!-- NavBar finish here -->
             <section class="all-banner">
-                <h1 class="text-center">Your GYM Membership</h1>
+                <h1 class="text-center">Your GYM Membership </h1>
             </section>
         </div>
     </section>
@@ -87,7 +87,7 @@
                                 <h4>Credit Card</h4>
                             </label>
                         </div>
-                        <p class="text-secondary">Safe money transfer using Visa, Master, Discover, Amrican Express.</p>
+                        <p class="text-secondary">Safe money transfer using Visa, Master, Discover, Amrican Express. <i class="far fa-credit-card"></i></p>
                     </div>
 
                     <div class="col-md-4">
@@ -97,11 +97,12 @@
                     </div>
                 </div>
 
-                <form id="card-body">
+                <script src="https://js.stripe.com/v3/"></script>
+                <form action="/charge" method="post"  id="card-body">
                     <div class="row mt-5">
                         <div class="col">
                             <h6>CARD NUMBER</h6>
-                            <input type="text" class="form-control" id="cardnumber">
+                            <div id="card-num"></div>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -111,16 +112,18 @@
                         </div>
                         <div class="col-md-4">
                             <h6>Expiry Date</h6>
-                            <input type="text" class="form-control" placeholder="MM/YY" id="expire">
+                            <div id="card-expiry"></div>
                         </div>
                         <div class="col-md-4">
                             <h6>CVV Code</h6>
-                            <input type="text" class="form-control" id="code">
+                            <div id="card-cvc"></div>
                         </div>
+                    </div>
+                    <div id="card-errors" role="alert"></div>
                     </div>
                     <button class="main-button mt-5" type="submit">
                         <h2>NEXT</h2>
-                      </button>
+                    </button>
                 </form>
             </div>
 
@@ -190,6 +193,7 @@
          })
 
     </script>
+    <script src="stripe.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
